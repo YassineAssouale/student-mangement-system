@@ -22,4 +22,9 @@ public class StudentServiceImp implements ya.springboot.sms.service.StudentServi
 	public List<Student> getAllStudents() {
 		return studentRepository.findAll();
 	}
+
+	@Override
+	public Student saveStudent(Student student) {
+		return studentRepository.save(student);
+	}
 }
