@@ -16,7 +16,7 @@ public class Student {
 	private Long id;
 	
 	@Column(name = "first_name", nullable = false)
-	private String firstname;
+	private String firstName;
 	
 	@Column(name = "last_name")
 	private String lastName;
@@ -28,10 +28,9 @@ public class Student {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Student(Long id, String firstname, String lastName, String email) {
+	public Student(String firstName, String lastName, String email) {
 		super();
-		this.id = id;
-		this.firstname = firstname;
+		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 	}
@@ -45,12 +44,12 @@ public class Student {
 		this.id = id;
 	}
 
-	public String getFirstname() {
-		return firstname;
+	public String getFirstName() {
+		return firstName;
 	}
 
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 
 	public String getLastName() {
