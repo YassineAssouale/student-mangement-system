@@ -25,6 +25,7 @@ public class StudentController {
 		model.addAttribute("students", studentService.getAllStudents());
 		return "students";
 	}
+	// Handler method to bind add student button with create_student view
 	@GetMapping("/students/new")
 	public String createStudentForm(Model model) {
 		// Create student object to hold student form data
