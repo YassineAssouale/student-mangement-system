@@ -37,4 +37,10 @@ public class StudentServiceImp implements ya.springboot.sms.service.StudentServi
 	public Student updateStudent(Student student) {
 		return studentRepository.save(student);
 	}
+
+	@Override
+	public void deleteStudentById(Long id) {
+		studentRepository.deleteById(id);
+		
+	}
 }
